@@ -11,9 +11,7 @@ const config: Config = {
       colors: {
         primary: "#FEB914",
         grey: "#606060",
-        tertiary: "#4B5563",
       },
-
       screens: {
         xx: "400px",
         xs: "480px",
@@ -24,32 +22,21 @@ const config: Config = {
         xl: "1440px",
         "2xl": "1512px",
       },
-      fontSize: {
+      fontFamily:{
+  inter: ["'Inter'", "sans-serif"],
+  sans: ["'DM Sans'", "sans-serif"],
+  wrksans: ["'Work Sans'", "sans-serif"],
+  poppins: ["'Poppins'", "sans-serif"],
+  }, fontSize: {
         base: "1rem",
-        sm: [
+        sm:
           "1.5rem",
-          {
-            fontWeight: "500",
-          },
-        ],
-        md: [
+        md: 
           "2.25rem",
-          {
-            fontWeight: "700",
-          },
-        ],
-        lg: [
+         lg: 
           "3rem",
-          {
-            fontWeight: "700",
-          },
-        ],
-        xl: [
+        xl: 
           "3.75rem",
-          {
-            fontWeight: "700",
-          },
-        ],
       },
     },
   },
