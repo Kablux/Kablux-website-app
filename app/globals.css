@@ -24,7 +24,7 @@ body {
 
 @layer utilities {
   .maxContainer {
-    @apply mx-auto max-w-[1280px];
+    @apply mx-auto max-w-[1440px];
   }
 
   .flexCenter {

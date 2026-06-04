@@ -1,3 +1,4 @@
+import BuiltInComfort from "@/components/landing/BuiltInComfort";
 import HeroBanner from "@/components/landing/HeroBanner";
 import LuxuryRide from "@/components/landing/LuxuryRide";
 import Services from "@/components/landing/Services";
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroBanner />
       <Services />
       <LuxuryRide />
+      <BuiltInComfort />
     </main>
   );
 }

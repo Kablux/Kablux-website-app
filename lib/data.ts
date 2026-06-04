@@ -5,7 +5,59 @@ import {
   FaShieldAlt,
   FaClock,
   FaStar,
+  FaSearch,
+  FaCalendarCheck,
+  // FaCarSide,
 } from "react-icons/fa";
+
+// import {
+//   FaUserShield,
+//   FaMapMarkedAlt,
+//   FaExclamationTriangle,
+
+// } from "react-icons/fa";
+
+export const safetyFeatures = [
+  {
+    number: "01",
+    title: "Verified Drivers Only",
+    description:
+      "Every Kablux driver passes strict background screening processes. No shortcuts. No exceptions.",
+  },
+  {
+    number: "02",
+    title: "Real Time Tracking",
+    description:
+      "From pickup to drop-off, we monitor every ride in real time. Share your trip with loved ones.",
+  },
+  {
+    number: "03",
+    title: "Emergency Features",
+    description:
+      "Your safety is non-negotiable. Help is always one tap away with Kablux.",
+  },
+];
+
+export const fleetSteps = [
+  {
+    icon: FaSearch,
+    title: "Kablux Fleet Browse and Select",
+    description:
+      "Choose from our wide range of premium vehicles and select pickup and return locations that suit you best.",
+  },
+  {
+    icon: FaCalendarCheck,
+    title: "Book and Confirm",
+    description:
+      "Book your desired vehicle in a few clicks and receive instant confirmation.",
+  },
+  {
+    icon: FaCarSide,
+    title: "Enjoy Your Ride",
+    description:
+      "Enjoy a premium transportation experience backed by quality service and comfort.",
+  },
+];
 
 export const services = [
   {
@@ -33,7 +85,6 @@ export const services = [
     href: "/corporate",
   },
 ];
-
 
 export const luxuryRideData = [
   {

@@ -9,22 +9,22 @@ const LuxuryRide = () => {
         <SectionTag>Services</SectionTag>
 
         <h2 className="mt-14 text-5xl text-[#002404] md:text-[72px]">
-         Luxury Rides, Fair Earnings
+          Luxury Rides, Fair Earnings
         </h2>
 
         <p className="mx-auto mt-8 max-w-3xl font-sans sm:leading-8 text-grey sm:text-[22px]">
-          We’re building a better ride-hailing experience for everyone whether you're 
-catching a quick trip or earning on your own schedule. 
+          We’re building a better ride-hailing experience for everyone whether
+          you're catching a quick trip or earning on your own schedule.
         </p>
 
-         <div className="mt-20 space-y-20">
-        {luxuryRideData.map((item) => (
-          <FeatureBlock
-            key={item.title}
-            {...(item as Parameters<typeof FeatureBlock>[0])}
-          />
-        ))}
-      </div>
+        <div className="mt-20 space-y-20">
+          {luxuryRideData.map((item) => (
+            <FeatureBlock
+              key={item.title}
+              {...(item as Parameters<typeof FeatureBlock>[0])}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
