@@ -30,13 +30,13 @@ const Button = ({
   const buttonContent = (
    <motion.span
   whileHover={{
-    y: -3,
+    y: -5,
   }}
   whileTap={{
     scale: 0.98,
   }}
   transition={{
-    duration: 0.2,
+    duration: 0.3,
     ease: "easeOut",
   }}
   className={`${baseStyles} ${variants[variant]} ${className}`}
