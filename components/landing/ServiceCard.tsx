@@ -35,7 +35,7 @@ const ServiceCard = ({
         {title}
       </h3>
 
-      <p className="mt-4 leading-8 text-[18px] text-grey">
+      <p className="mt-4 font-sans sm:text-[18px] text-grey">
         {description}
       </p>
 
