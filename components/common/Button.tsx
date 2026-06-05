@@ -18,7 +18,7 @@ const Button = ({
   className = "",
 }: ButtonProps) => {
   const baseStyles =
-    "flex items-center z-5 justify-center rounded-2xl px-8 py-4 transition-ease duration-300";
+    "flex items-center z-5 justify-center rounded-2xl px-8 py-4 transition-ease duration-300 w-full";
 
   const variants = {
     primary:

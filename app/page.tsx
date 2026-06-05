@@ -1,4 +1,5 @@
 import BuiltInComfort from "@/components/landing/BuiltInComfort";
+import DownloadApp from "@/components/landing/DownloadApp";
 import HeroBanner from "@/components/landing/HeroBanner";
 import LuxuryRide from "@/components/landing/LuxuryRide";
 import Services from "@/components/landing/Services";
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <LuxuryRide />
       <BuiltInComfort />
+      <DownloadApp/>
     </main>
   );
 }
