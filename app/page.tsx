@@ -1,3 +1,4 @@
+import Navbar from "@/components/layout/Navbar";
 import BuiltInComfort from "@/components/landing/BuiltInComfort";
 import DownloadApp from "@/components/landing/DownloadApp";
 import HeroBanner from "@/components/landing/HeroBanner";
@@ -7,11 +8,12 @@ import Services from "@/components/landing/Services";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col font-inter">
+      <Navbar />
       <HeroBanner />
       <Services />
       <LuxuryRide />
       <BuiltInComfort />
-      <DownloadApp/>
+      <DownloadApp />
     </main>
   );
 }
