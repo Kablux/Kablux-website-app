@@ -6,14 +6,14 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
- theme: {
+  theme: {
     extend: {
       colors: {
         primary: "#FEB914",
         grey: "#606060",
-        tertiary: "#4B5563",
+        secondary: "#004208",
+        tertiary: "#FFF9EB",
       },
-
       screens: {
         xx: "400px",
         xs: "480px",
@@ -24,36 +24,21 @@ const config: Config = {
         xl: "1440px",
         "2xl": "1512px",
       },
+      fontFamily: {
+        inter: ["'Inter'", "sans-serif"],
+        sans: ["'DM Sans'", "sans-serif"],
+        wrksans: ["'Work Sans'", "sans-serif"],
+        poppins: ["'Poppins'", "sans-serif"],
+      },
       fontSize: {
         base: "1rem",
-        sm: [
-          "1.5rem",
-          {
-            fontWeight: "500",
-          },
-        ],
-        md: [
-          "2.25rem",
-          {
-            fontWeight: "700",
-          },
-        ],
-        lg: [
-          "3rem",
-          {
-            fontWeight: "700",
-          },
-        ],
-        xl: [
-          "3.75rem",
-          {
-            fontWeight: "700",
-          },
-        ],
+        sm: "1.5rem",
+        md: "2.25rem",
+        lg: "3rem",
+        xl: "3.75rem",
       },
     },
   },
   plugins: [],
 };
 export default config;
-
