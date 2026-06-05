@@ -5,7 +5,7 @@ const DownloadApp = () => {
   return (
     <section className="bg-tertiary">
       <div className="maxContainer px-5 py-20">
-        <div className="grid items-end sm:grid-cols-[320px_1fr] md:grid-cols-[426px_1fr] lg:grid-cols-[504px_1fr]">
+        <div className="grid sm:items-end sm:grid-cols-[379px_1fr] md:grid-cols-[426px_1fr] lg:grid-cols-[504px_1fr]">
           {/* Phone Mockup */}
 
           <div className="relative h-full">
@@ -15,7 +15,7 @@ const DownloadApp = () => {
               alt="Kablux App"
               width={504}
               height={621}
-              className="w-full sm:w-[320px] lg:w-[504px]"
+              className="w-full sm:w-[379px] lg:w-[504px]"
               priority
             />
             {/* </div> */}
