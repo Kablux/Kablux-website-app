@@ -28,7 +28,7 @@ const Footer = () => {
               <div className="flex flex-col justify-between">
                 <div>
                   <Image
-                    src="/kablux-logo.svg"
+                    src="/kablux-logo.png"
                     alt="Kablux Logo"
                     width={180}
                     height={50}
