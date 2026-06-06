@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className="absolute left-0 right-0 top-0 z-50 pt-6 md:pt-8">
-      <div className="maxContainer px-5">
+      <div className="maxContainer px-[7%]">
         <div className="flex items-center justify-between">
           {/* Desktop Nav */}
 
@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className="flex flex-col justify-between">
               <div>
                 <Image
-                  src="/kablux-logo.svg"
+                  src="/kablux-logo.png"
                   alt="Kablux Logo"
                   width={150}
                   height={40}
@@ -41,12 +41,12 @@ const Navbar = () => {
 
             {/* Links */}
 
-            <nav className="flex items-center gap-1">
+            <nav className="flex items-center gap-1 font-sans">
               {navLinks.map((link, index) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={`rounded-xl px-4 py-2 text-[13px] transition-all duration-200 ${
+                  className={`rounded-xl px-4 py-2 text-[14px] transition-all duration-200 ${
                     index === 0
                       ? "bg-primary text-black font-medium"
                       : "text-[#5a5a5a] hover:bg-[#FFF3CC]"
@@ -56,7 +56,7 @@ const Navbar = () => {
                 </Link>
               ))}
 
-              <button className="flex items-center gap-1 rounded-xl px-4 py-2 text-[13px] text-[#5a5a5a] hover:bg-[#FFF3CC]">
+              <button className="flex items-center gap-1 rounded-xl px-4 py-2 text-[14px] text-[#5a5a5a] hover:bg-[#FFF3CC]">
                 Company
                 <ChevronDown size={14} />
               </button>
@@ -76,7 +76,7 @@ const Navbar = () => {
 
           <div className="flex w-full items-center justify-between rounded-2xl bg-white px-4 py-3 shadow-sm md:hidden">
             <Image
-              src="/kablux-logo.svg"
+              src="/kablux-logo.png"
               alt="Kablux Logo"
               width={150}
               height={30}
