@@ -18,12 +18,12 @@ const PremiumHero = () => {
       <div className="absolute inset-0 bg-black/75" />
 
       <div className="relative z-10 maxContainer px-5 py-10 md:py-16">
-        <div className="grid min-h-[700px] items-center md:grid-cols-[1.15fr_0.50fr]">
+        <div className="grid min-h-[700px] gap-8 md:gap-0 items-center md:grid-cols-[1.15fr_0.50fr]">
           {/* LEFT CONTENT */}
 
           <div>
             <div className="] rounded-[32px] flex flex-col items-center w-full text-center bg-[#AB821F]/80 p-8 text-white backdrop-blur-[3px] md:p-12">
-              <h1 className="text-4xl font-semibold leading-tight md:text-[52px] max-w-[720px]">
+              <h1 className="text-sm sm:text-md font-semibold sm:leading-tight md:text-[52px] max-w-[720px]">
                 Honoring our Premium while driving the future.
               </h1>
 
@@ -33,7 +33,7 @@ const PremiumHero = () => {
                 shaped the way the world moves forward.
               </p>
 
-              <div className="mt-8 flex flex-wrap sm:flex-nowrap gap-4">
+              <div className="mt-8 flex justify-center flex-wrap sm:flex-nowrap gap-4">
                 <Button className="font-semibold w-max">Explore Offers</Button>
 
                 <Button
