@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className="absolute left-0 right-0 top-0 z-50 pt-6 md:pt-8">
-      <div className="maxContainer px-[7%]">
+      <div className="maxContainer sm:px-8 px-[7%]">
         <div className="flex items-center justify-between">
           {/* Desktop Nav */}
 

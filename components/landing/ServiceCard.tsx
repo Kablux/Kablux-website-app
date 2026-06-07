@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion"; // Imported Variants
 import Button from "@/components/common/Button";
 
 interface ServiceCardProps {
@@ -19,16 +19,25 @@ const ServiceCard = ({
   buttonText,
   href,
 }: ServiceCardProps) => {
+ const cardVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeOut", 
+      },
+    },
+  };
+
   return (
     <motion.article
-      whileHover={{ y: -5 }}
-      transition={{ duration: 0.2 }}
-      className="relative overflow-hidden rounded-[20px] bg-white py-8 text-start px-6 shadow-lg"
+      variants={cardVariants}
+      whileHover={{ y: -8, transition: { duration: 0.2 } }} 
+      className="relative overflow-hidden rounded-[20px] bg-white py-8 text-start px-6 shadow-lg border border-gray-50"
     >
-      {/* Corner decoration */}
-
       <div className="absolute right-0 top-0 h-[74px] w-[74px] bg-gradient-to-b from-[#fde999] to-white [clip-path:polygon(100%_0,0_0,100%_100%)]" />
-
       <div className="absolute right-7 top-4 h-[44px] w-[44px] bg-gradient-to-b from-[#fde999] to-white [clip-path:polygon(100%_0,0_0,100%_100%)]" />
 
       <h3 className="text-sm font-semibold">

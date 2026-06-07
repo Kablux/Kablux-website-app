@@ -18,7 +18,7 @@ const Button = ({
   className = "",
 }: ButtonProps) => {
   const baseStyles =
-    "flex items-center z-5 justify-center rounded-2xl px-8 py-4 transition-ease duration-300 w-full";
+    "flex items-center z-5 justify-center rounded-2xl px-8 py-4 w-full";
 
   const variants = {
     primary:
@@ -30,14 +30,17 @@ const Button = ({
   const buttonContent = (
    <motion.span
   whileHover={{
-    y: -5,
+    scale: 1.02,
+        y: -2,
   }}
   whileTap={{
     scale: 0.98,
   }}
   transition={{
-    duration: 0.3,
-    ease: "easeOut",
+    type: "spring",
+        stiffness: 400,
+        damping: 25,
+        mass: 0.8,
   }}
   className={`${baseStyles} ${variants[variant]} ${className}`}
 >

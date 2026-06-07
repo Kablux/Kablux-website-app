@@ -19,7 +19,7 @@ const serviceLinks = [
 const Footer = () => {
   return (
     <footer className="bg-black py-20 text-white">
-      <div className="maxContainer px-5">
+      <div className="maxContainer sm:px-8 px-5">
         <div className="flex justify-between flex-wrap gap-8 md:gap-12 w-full">
           <div className="flex flex-col justify-between gap-8 w-full md:w-1/2">
             <div className="flex justify-between flex-wrap gap-8 md:gap-12">
@@ -166,12 +166,13 @@ const Footer = () => {
               >
                 Send A Request
               </button>
-            </div><div className="mt-12 md:hidden block md:mt-0 text-center">
-            <p className="mt-12 md:hidden block sm:text-[18px] text-[#d4a71d]">
+            </div>
+            <div className="mt-12 md:hidden block md:mt-0 text-center">
+              <p className="mt-12 md:hidden block sm:text-[18px] text-[#d4a71d]">
                 © 2026 KabLux™ Limited. All rights reserved.
-              </p></div>
+              </p>
+            </div>
           </div>
-          
         </div>
       </div>
     </footer>

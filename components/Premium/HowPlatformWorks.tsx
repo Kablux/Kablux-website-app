@@ -1,12 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  CarFront,
-  Users,
-  CalendarDays,
-  Gauge,
-} from "lucide-react";
+import { CarFront, Users, CalendarDays, Gauge } from "lucide-react";
 
 const stats = [
   {
@@ -36,7 +31,8 @@ export default function HowPlatformWorks() {
     <section
       className="relative overflow-hidden py-20 md:py-24"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1400&q=80')",
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1400&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -45,7 +41,7 @@ export default function HowPlatformWorks() {
 
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 maxContainer px-5">
+      <div className="relative z-10 maxContainer sm:px-8 px-5">
         <div className="mx-auto max-w-[980px] text-center">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
@@ -65,9 +61,11 @@ export default function HowPlatformWorks() {
               delay: 0.2,
               duration: 0.6,
             }}
-            className="mx-auto mt-5 max-w-[760px] text-[18px] leading-9 text-white/85 md:text-[22px]"
+            className="mx-auto mt-5 max-w-[760px] sm:text-[18px] sm:leading-9 text-white/85 md:text-[22px]"
           >
-            We put drivers first. With fair commissions, instant payouts, and flexible hours, Kablux is the ride-hailing platform that truly works for you.
+            We put drivers first. With fair commissions, instant payouts, and
+            flexible hours, Kablux is the ride-hailing platform that truly works
+            for you.
           </motion.p>
 
           {/* Stats */}
@@ -100,10 +98,7 @@ export default function HowPlatformWorks() {
                   {/* Icon */}
 
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FF9E0C]">
-                    <Icon
-                      size={24}
-                      className="text-white"
-                    />
+                    <Icon size={24} className="text-white" />
                   </div>
 
                   {/* Content */}
@@ -113,9 +108,7 @@ export default function HowPlatformWorks() {
                       {stat.value}
                     </h3>
 
-                    <p className=" text-gray-500">
-                      {stat.label}
-                    </p>
+                    <p className=" text-gray-500">{stat.label}</p>
                   </div>
                 </motion.div>
               );

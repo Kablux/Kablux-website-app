@@ -38,7 +38,7 @@ const HowWeWorkStep = ({
           {title}
         </h3>
 
-        <p className="mt-2 text-base leading-8 text-[#111] md:text-[22px]">
+        <p className="mt-2 text-base leading-8 text-grey md:text-[22px]">
           {description}
         </p>
       </div>
