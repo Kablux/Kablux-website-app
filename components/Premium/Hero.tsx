@@ -1,37 +1,35 @@
 "use client";
-
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion"; 
 import Button from "@/components/common/Button";
 import { CalendarDays, Clock3, ChevronDown } from "lucide-react";
 
 const PremiumHero = () => {
-  // Stagger arrangement for the left side typography elements
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.12, // Crisp, staggered appearance
+        staggerChildren: 0.12, 
         delayChildren: 0.1,
       },
     },
   };
 
-  // Smooth cinematic ease-out for text blocks
-  const textVariants = {
+  // 2. Added explicit Variants type (fixes the cubic-bezier array issue)
+  const textVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.25, 1, 0.5, 1], // Custom premium easeOut (cubic-bezier)
+        ease: [0.25, 1, 0.5, 1], 
       },
     },
   };
 
-  // Distinct entrance for the right-hand card layout
-  const cardVariants = {
+  // 3. Added explicit Variants type (fixes the ease string issue)
+  const cardVariants: Variants = {
     hidden: { opacity: 0, scale: 0.96, y: 15 },
     visible: {
       opacity: 1,
@@ -40,7 +38,7 @@ const PremiumHero = () => {
       transition: {
         duration: 0.7,
         ease: "easeOut",
-        delay: 0.4, // Enters right after the main title loads
+        delay: 0.4, 
       },
     },
   };
@@ -54,7 +52,6 @@ const PremiumHero = () => {
         backgroundPosition: "center",
       }}
     >
-      {/* Background Dark Overlay Fade-in */}
       <motion.div 
         className="absolute inset-0 bg-black/75"
         initial={{ opacity: 0 }}
@@ -65,7 +62,6 @@ const PremiumHero = () => {
       <div className="relative z-10 maxContainer sm:px-8 px-5 py-10 md:py-16">
         <div className="grid min-h-[700px] gap-8 md:gap-0 items-center md:grid-cols-[1.15fr_0.50fr]">
           
-          {/* LEFT CONTENT CONTAINER */}
           <motion.div
             initial="hidden"
             animate="visible"
@@ -103,7 +99,6 @@ const PremiumHero = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT BOOKING CARD CONTAINER */}
           <motion.div 
             className="flex justify-center lg:justify-end"
             initial="hidden"
@@ -116,7 +111,6 @@ const PremiumHero = () => {
               </h2>
 
               <div className="mt-6 space-y-8">
-                {/* Vehicle Selection */}
                 <div className="relative">
                   <select className="h-12 w-full appearance-none rounded-xl border border-white/20 bg-transparent px-4 outline-none transition-colors duration-200 focus:border-[#AB821F]">
                     <option className="text-black">KabLux Premium</option>
@@ -129,14 +123,12 @@ const PremiumHero = () => {
                   />
                 </div>
 
-                {/* Pickup Location */}
                 <input
                   type="text"
                   placeholder="From"
                   className="h-12 w-full rounded-xl border border-white/20 bg-transparent px-4 outline-none placeholder:text-white/60 transition-colors duration-200 focus:border-[#AB821F]"
                 />
 
-                {/* Dropoff Location */}
                 <input
                   type="text"
                   placeholder="To"
