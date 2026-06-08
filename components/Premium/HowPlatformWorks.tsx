@@ -70,7 +70,7 @@ export default function HowPlatformWorks() {
 
           {/* Stats */}
 
-          <div className="mt-12 grid gap-5 grid-cols-2 md:grid-cols-4">
+          <div className="mt-12 grid gap-4 sm:gap-8 grid-cols-2 md:grid-cols-4">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
 
