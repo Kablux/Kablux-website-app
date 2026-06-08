@@ -7,15 +7,112 @@ import {
   FaStar,
   FaSearch,
   FaCalendarCheck,
-  // FaCarSide,
 } from "react-icons/fa";
 
-// import {
-//   FaUserShield,
-//   FaMapMarkedAlt,
-//   FaExclamationTriangle,
 
-// } from "react-icons/fa";
+export const carCategories = [
+  "All",
+  "Luxury",
+  "Executive",
+  "Business",
+  "Wedding",
+  "VIP",
+  "Classic",
+];
+
+export interface Car {
+  id: string;
+  slug: string;
+  name: string;
+  type: string;
+  price: string;
+  currency: string;
+  image: string;
+  transmission: string;
+  ac: boolean;
+  category: string;
+}
+
+export const availableCars: Car[] = [
+  {
+    id: "1",
+    slug: "mercedes-s-class",
+    name: "Mercedes S-Class",
+    type: "Luxury Sedan",
+    price: "25",
+    currency: "N",
+    image:
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop",
+    transmission: "Automatic",
+    ac: true,
+    category: "Luxury",
+  },
+  {
+    id: "2",
+    slug: "tesla-model-s",
+    name: "Tesla Model S",
+    type: "Executive Sedan",
+    price: "50",
+    currency: "N",
+    image:
+      "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=800&auto=format&fit=crop",
+    transmission: "Automatic",
+    ac: true,
+    category: "Executive",
+  },
+  {
+    id: "3",
+    slug: "mercedes-amg",
+    name: "Mercedes AMG",
+    type: "Business Sedan",
+    price: "45",
+    currency: "N",
+    image:
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?q=80&w=800&auto=format&fit=crop",
+    transmission: "Automatic",
+    ac: true,
+    category: "Business",
+  },
+  {
+    id: "4",
+    slug: "audi-q8",
+    name: "Audi Q8",
+    type: "Luxury Wedding",
+    price: "40",
+    currency: "N",
+    image:
+      "https://images.unsplash.com/photo-1606152421802-db97b9c7a11b?q=80&w=800&auto=format&fit=crop",
+    transmission: "Automatic",
+    ac: true,
+    category: "Wedding",
+  },
+  {
+    id: "5",
+    slug: "mclaren-720s",
+    name: "McLaren 720S",
+    type: "Super Sport",
+    price: "35",
+    currency: "N",
+    image:
+      "https://images.unsplash.com/photo-1614200187524-dc4b892acf16?q=80&w=800&auto=format&fit=crop",
+    transmission: "Automatic",
+    ac: true,
+    category: "Sport",
+  },
+  {
+    id: "6",
+    slug: "mini-cooper-classic",
+    name: "Mini Cooper",
+    type: "Classic Hatchback",
+    price: "50",
+    currency: "N",
+    image:
+      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=800&auto=format&fit=crop",
+    transmission: "Automatic",
+    ac: true,
+    category: "Classic",
+  },
+];
 
 export const safetyFeatures = [
   {

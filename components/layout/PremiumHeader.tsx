@@ -30,7 +30,7 @@ export default function PremiumNavbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-black">
-      <div className="maxContainer px-5">
+      <div className="maxContainer sm:px-8 px-5">
         <div className="flex h-20 items-center justify-between font-poppins">
           {/* Logo */}
 
@@ -92,11 +92,7 @@ export default function PremiumNavbar() {
             onClick={() => setOpen(!open)}
             className="text-white lg:hidden"
           >
-            {open ? (
-              <X size={28} />
-            ) : (
-              <Menu size={28} />
-            )}
+            {open ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
@@ -118,7 +114,7 @@ export default function PremiumNavbar() {
           }}
           className="border-t border-white/10 bg-black lg:hidden"
         >
-          <div className="maxContainer px-5 py-6">
+          <div className="maxContainer sm:px-8 px-5 py-6">
             <nav className="flex flex-col gap-5">
               {navLinks.map((link) => (
                 <Link
@@ -133,10 +129,7 @@ export default function PremiumNavbar() {
             </nav>
 
             <div className="mt-8 flex flex-col gap-3">
-              <Link
-                href="/signin"
-                className="text-white/80"
-              >
+              <Link href="/signin" className="text-white/80">
                 Sign In
               </Link>
 

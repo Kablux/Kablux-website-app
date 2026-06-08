@@ -7,8 +7,7 @@ const steps = [
   {
     number: 1,
     title: "Choose Your Fare",
-    description:
-      "Go fixed or negotiate directly with drivers.",
+    description: "Go fixed or negotiate directly with drivers.",
   },
   {
     number: 2,
@@ -19,8 +18,7 @@ const steps = [
   {
     number: 3,
     title: "Ride Options for Every Need",
-    description:
-      "Budget, premium, convoy, or security-assisted rides.",
+    description: "Budget, premium, convoy, or security-assisted rides.",
   },
   {
     number: 4,
@@ -56,7 +54,7 @@ const itemVariants = {
 const HowWeWork = () => {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="maxContainer px-5">
+      <div className="maxContainer sm:px-8 px-5">
         <div className="grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
           {/* IMAGE */}
 
@@ -105,15 +103,9 @@ const HowWeWork = () => {
               How We Work
             </motion.p>
 
-            <motion.div
-              variants={containerVariants}
-              className="mt-8 space-y-8"
-            >
+            <motion.div variants={containerVariants} className="mt-8 space-y-8">
               {steps.map((step) => (
-                <motion.div
-                  key={step.number}
-                  variants={itemVariants}
-                >
+                <motion.div key={step.number} variants={itemVariants}>
                   <HowWeWorkStep {...step} />
                 </motion.div>
               ))}
