@@ -15,18 +15,17 @@ const FleetStep = ({
   description,
   index = 0,
 }: FleetStepProps) => {
-  const stepVariants: Variants = {
-    hidden: { opacity: 0, x: -40 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 26,
-      },
+ const stepVariants: Variants = {
+  hidden: { opacity: 0, x: -40 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.3, 
+      ease: "easeOut", 
     },
-  };
+  },
+};
 
   return (
     <motion.article
