@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#FEB914",
+        deepYellow:"#FFAC00",
         grey: "#606060",
         secondary: "#004208",
         tertiary: "#FFF9EB",
@@ -29,6 +30,7 @@ const config: Config = {
         sans: ["'DM Sans'", "sans-serif"],
         wrksans: ["'Work Sans'", "sans-serif"],
         poppins: ["'Poppins'", "sans-serif"],
+        heebo: ["'Heebo'", "sans-serif"],
       },
       fontSize: {
         base: "1rem",
