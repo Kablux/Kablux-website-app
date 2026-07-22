@@ -14,11 +14,19 @@ const navLinks = [
   { label: "Become a Fleet Owner", href: "/fleet" },
 ];
 
-const Navbar = () => {
+interface NavbarProps {
+  isAbsolute?: boolean;
+}
+
+const Navbar = ({isAbsolute = true}: NavbarProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="absolute left-0 right-0 top-0 z-50 pt-6 md:pt-8">
+    <header className={`${
+        isAbsolute 
+          ? "absolute left-0 right-0 top-0 py-6 md:py-8" 
+          : "relative w-full"
+      } z-50`}>
       <div className="maxContainer sm:px-8 px-[7%]">
         <div className="flex items-center justify-between">
           {/* Desktop Nav */}
@@ -41,7 +49,7 @@ const Navbar = () => {
 
             {/* Links */}
 
-            <nav className="flex items-center gap-1 font-sans">
+            <nav className="flex items-center gap-4 font-sans">
               {navLinks.map((link, index) => (
                 <Link
                   key={link.label}
@@ -64,12 +72,12 @@ const Navbar = () => {
 
             {/* CTA */}
 
-            <Button
+            {/* <Button
               href="/waitlist"
               className="rounded-xl px-5 py-3 text-[13px] font-semibold"
             >
               Get Early Access
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Header */}

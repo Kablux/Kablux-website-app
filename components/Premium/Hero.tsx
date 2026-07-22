@@ -1,21 +1,19 @@
 "use client";
-import { motion, Variants } from "framer-motion"; 
+import { motion, Variants } from "framer-motion";
 import Button from "@/components/common/Button";
 import { CalendarDays, Clock3, ChevronDown } from "lucide-react";
 
 const PremiumHero = () => {
   const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.12, 
-        delayChildren: 0.1,
-      },
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.06,
     },
-  };
+  },
+};
 
-  // 2. Added explicit Variants type (fixes the cubic-bezier array issue)
   const textVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
     visible: {
@@ -23,7 +21,7 @@ const PremiumHero = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.25, 1, 0.5, 1], 
+        ease: [0.25, 1, 0.5, 1],
       },
     },
   };
@@ -38,7 +36,7 @@ const PremiumHero = () => {
       transition: {
         duration: 0.7,
         ease: "easeOut",
-        delay: 0.4, 
+        delay: 0.4,
       },
     },
   };
@@ -52,41 +50,39 @@ const PremiumHero = () => {
         backgroundPosition: "center",
       }}
     >
-      <motion.div 
+      <motion.div
         className="absolute inset-0 bg-black/75"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, ease: "linear" }}
       />
 
-      <div className="relative z-10 maxContainer sm:px-8 px-5 py-10 md:py-16">
+      <div className="relative z-10 maxContainer sm:px-8 px-5 py-10 md:py-16 transform-gpu">
         <div className="grid min-h-[700px] gap-8 md:gap-0 items-center md:grid-cols-[1.15fr_0.50fr]">
-          
           <motion.div
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+  viewport={{ once: true, amount: 0.3 }}
             variants={containerVariants}
+            className="transform-gpu"
           >
-            <div className="rounded-[32px] flex flex-col items-center w-full text-center bg-[#AB821F]/80 p-8 text-white backdrop-blur-[3px] md:p-12 shadow-2xl border border-white/5">
-              <motion.h1 
+            <div className="rounded-[32px] flex flex-col items-center w-full text-center bg-[#AB821F]/80 p-8 text-white backdrop-blur-[3px] md:p-12 shadow-2xl border border-white/5 ">
+              <motion.h1
                 variants={textVariants}
-                className="text-sm sm:text-md font-semibold sm:leading-tight md:text-[52px] max-w-[720px]"
+                className="text-sm sm:text-md font-semibold sm:leading-tight md:text-[52px] max-w-[720px] transform-gpu"
               >
                 Honoring our Premium while driving the future.
               </motion.h1>
 
-              <motion.p 
+              <motion.p
                 variants={textVariants}
-                className="mt-5 max-w-[820px] text-base leading-8 text-white/90 md:text-[20px]"
+                className="mt-5 max-w-[820px] text-base leading-8 text-white/90 md:text-[20px] transform-gpu "
               >
                 Celebrating 140 years since inventing the automobile,
                 Mercedes-Benz welcomes you to the brand that has continuously
                 shaped the way the world moves forward.
               </motion.p>
 
-              <motion.div 
+              <motion.div
                 variants={textVariants}
-                className="mt-8 flex justify-center flex-wrap sm:flex-nowrap gap-4"
+                className="mt-8 flex justify-center flex-wrap sm:flex-nowrap gap-4 transform-gpu"
               >
                 <Button className="font-semibold w-max">Explore Offers</Button>
                 <Button
@@ -99,13 +95,14 @@ const PremiumHero = () => {
             </div>
           </motion.div>
 
-          <motion.div 
-            className="flex justify-center lg:justify-end"
+          <motion.div
+            className="flex justify-center lg:justify-end transform-gpu"
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+  viewport={{ once: true }}
             variants={cardVariants}
           >
-            <div className="w-full max-w-[416px] rounded-[20px] border border-white/10 bg-black/70 px-6 py-8 text-white backdrop-blur-xl shadow-2xl">
+            <div className="w-full max-w-[416px] rounded-[20px] border border-white/10 px-6 py-8 text-white bg-[#0D0D0D]/90 shadow-2xl">
               <h2 className="text-center text-sm font-semibold tracking-wide uppercase opacity-90">
                 Book your Ride
               </h2>
@@ -165,7 +162,6 @@ const PremiumHero = () => {
               </div>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
