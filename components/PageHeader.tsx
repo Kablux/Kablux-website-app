@@ -26,24 +26,23 @@ const PageHeader = ({
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
             <Send size={14} className="text-primary" />
-            <span>helpplus@yahoo.com</span>
+            <span>info@kablux.com</span>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={14} className="text-primary" />
-            <span>+088 292 94 239</span>
+            <span>+234 916 309 7000</span>
           </div>
         </div>
 
         {/* Right Side: Language & Account */}
         <div className="flex items-center gap-8">
-          <div className="flex cursor-pointer items-center gap-2 transition-colors hover:text-white">
+          <div className="flex items-center gap-2 transition-colors hover:text-white">
             <Flag size={14} className="text-primary" />
             <span>English</span>
-            <ChevronDown size={14} />
           </div>
           <div className="flex cursor-pointer items-center gap-2 transition-colors hover:text-white">
             <User size={14} className="text-primary" />
-            <span>My Account</span>
+            <span>Kablux</span>
           </div>
         </div>
       </div>
