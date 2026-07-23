@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 const companyLinks = [
   { label: "About Us", href: "/about" },
-  { label: "FAQs", href: "/faq" },
+  { label: "FAQs", href: "/faqs" },
   { label: "Contact Us", href: "/contact" },
   { label: "Terms of Service", href: "/terms" },
   { label: "Privacy Policy", href: "/privacy" },
