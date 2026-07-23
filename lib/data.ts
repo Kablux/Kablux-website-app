@@ -43,6 +43,7 @@ export interface FAQCategory {
   items: FAQItem[];
 }
 
+
 export const categories: FAQCategory[] = [
   {
     label: "General",

@@ -15,7 +15,7 @@ interface PageHeaderProps {
 const PageHeader = ({
   title,
   crumb,
-  backgroundImage = "/dri.png",
+  backgroundImage = "/driver-img.png",
   svgWidth = "235"
 }: PageHeaderProps) => {
   const [firstWord, ...restWords] = title.split(" ");

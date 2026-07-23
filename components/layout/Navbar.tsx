@@ -18,15 +18,17 @@ interface NavbarProps {
   isAbsolute?: boolean;
 }
 
-const Navbar = ({isAbsolute = true}: NavbarProps) => {
+const Navbar = ({ isAbsolute = true }: NavbarProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className={`${
-        isAbsolute 
-          ? "absolute left-0 right-0 top-0 py-6 md:py-8" 
+    <header
+      className={`${
+        isAbsolute
+          ? "absolute left-0 right-0 top-0 py-6 md:py-8"
           : "relative w-full"
-      } z-50`}>
+      } z-50`}
+    >
       <div className="maxContainer sm:px-8 px-[7%]">
         <div className="flex items-center justify-between">
           {/* Desktop Nav */}
@@ -37,11 +39,12 @@ const Navbar = ({isAbsolute = true}: NavbarProps) => {
             <div className="flex flex-col justify-between">
               <div>
                 <Image
-                  src="/kablux-logo.png"
+                  src="/kablux-logo.svg"
                   alt="Kablux Logo"
                   width={150}
                   height={40}
                   className="h-auto w-[130px] md:w-[150px]"
+                  layout="intrinsic"
                   priority
                 />
               </div>
