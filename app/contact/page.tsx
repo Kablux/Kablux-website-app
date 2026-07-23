@@ -1,8 +1,5 @@
-import AboutIntro from "@/components/about/AboutIntro";
-import OurServices from "@/components/about/OurApproach";
 import ContactInfo from "@/components/contact/ContactInfo";
 import ContactMapForm from "@/components/contact/ContactMapForm";
-import Navbar from "@/components/layout/Navbar";
 import PageHeader from "@/components/PageHeader";
 
 export default function Contact() {

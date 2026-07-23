@@ -33,6 +33,140 @@ export interface Car {
   category: string;
 }
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface FAQCategory {
+  label: string;
+  items: FAQItem[];
+}
+
+export const categories: FAQCategory[] = [
+  {
+    label: "General",
+    items: [
+      {
+        question: "What is Kablux?",
+        answer:
+          "Kablux is a Nigerian ride-hailing platform that allows riders and drivers to negotiate fares before every trip. The platform prioritizes transparency, affordability, and safety.",
+      },
+      {
+        question: "Where does Kablux operate?",
+        answer:
+          "Kablux is launching in major Nigerian cities, beginning with Lagos, with plans to expand across the country as our driver network grows.",
+      },
+      {
+        question: "How is Kablux different from other ride-hailing apps?",
+        answer:
+          "Unlike traditional ride-hailing platforms, Kablux allows riders and drivers to negotiate fares, creating fairer pricing while maintaining high safety standards.",
+      },
+    ],
+  },
+
+  {
+    label: "For Riders",
+    items: [
+      {
+        question: "How do I book a ride?",
+        answer:
+          "Open the Kablux app, enter your pickup and destination, receive offers from nearby drivers, negotiate if needed, and confirm your preferred ride.",
+      },
+      {
+        question: "Can I negotiate the fare?",
+        answer:
+          "Yes. Kablux lets you negotiate with drivers before confirming your ride so both parties agree on a fair price.",
+      },
+      {
+        question: "How do I share my trip?",
+        answer:
+          "During an active trip, tap the 'Share Trip' option to send your live trip details and location to trusted friends or family.",
+      },
+    ],
+  },
+
+  {
+    label: "For Drivers",
+    items: [
+      {
+        question: "How do I sign up as a driver?",
+        answer:
+          "Download the Kablux Driver app, complete your profile, upload the required documents, and wait for verification before accepting trips.",
+      },
+      {
+        question: "When do I get paid?",
+        answer:
+          "Driver earnings are transferred according to the payout schedule shown in your driver dashboard. You can also monitor completed trips and earnings anytime.",
+      },
+      {
+        question: "What commission does Kablux take?",
+        answer:
+          "Kablux charges a transparent commission on completed trips. The exact rate is clearly communicated before you start driving.",
+      },
+    ],
+  },
+
+  {
+    label: "Corporate",
+    items: [
+      {
+        question: "Does Kablux offer corporate accounts?",
+        answer:
+          "Yes. Businesses can create corporate accounts to manage employee transportation, receive centralized billing, and access ride reports.",
+      },
+      {
+        question: "Can we book rides for guests or clients?",
+        answer:
+          "Absolutely. Corporate administrators can book rides for employees, guests, and clients directly from the corporate dashboard.",
+      },
+    ],
+  },
+
+  {
+    label: "Safety",
+    items: [
+      {
+        question: "Are Kablux drivers verified?",
+        answer:
+          "Yes. Every driver undergoes identity verification, document validation, and vehicle inspection before joining the platform.",
+      },
+      {
+        question: "What is the SOS button?",
+        answer:
+          "The SOS feature allows riders and drivers to quickly contact emergency services or designated emergency contacts during a trip.",
+      },
+      {
+        question: "Can I report unsafe behavior?",
+        answer:
+          "Yes. You can report safety concerns directly through the app. Our support team reviews every report promptly.",
+      },
+    ],
+  },
+
+  {
+    label: "Payments",
+    items: [
+      {
+        question: "How can I pay?",
+        answer:
+          "Kablux supports multiple payment options, including debit cards, bank transfers, wallets, and cash where available.",
+      },
+      {
+        question: "Do you provide receipts?",
+        answer:
+          "Yes. Digital receipts are automatically sent after every completed trip and are available in your trip history.",
+      },
+      {
+        question: "Can I save multiple payment methods?",
+        answer:
+          "Yes. You can securely add and manage multiple payment methods from your account settings.",
+      },
+    ],
+  },
+];
+
+
 export const availableCars: Car[] = [
   {
     id: "1",

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send, Phone, Flag, ChevronDown, User } from "lucide-react";
+import { Send, Phone, Flag,  User } from "lucide-react";
 import Link from "next/link";
 import Navbar from "./layout/Navbar";
 
@@ -9,12 +9,14 @@ interface PageHeaderProps {
   title: string;
   crumb: string;
   backgroundImage?: string;
+  svgWidth?: string | number;
 }
 
 const PageHeader = ({
   title,
   crumb,
-  backgroundImage = "/page-header-bg.png",
+  backgroundImage = "/driver-img.png",
+  svgWidth = "235"
 }: PageHeaderProps) => {
   const [firstWord, ...restWords] = title.split(" ");
 
@@ -74,7 +76,7 @@ const PageHeader = ({
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          width="235"
+          width={svgWidth}
           height="10"
           viewBox="0 0 235 10"
           fill="none"
