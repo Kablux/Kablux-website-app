@@ -10,8 +10,9 @@ import Button from "@/components/common/Button";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Corporate Account", href: "/coming-soon" },
-  { label: "Book a Premium Ride", href: "/premium" },
-  { label: "Become a Fleet Owner", href: "/fleet" },
+  { label: "Book a Premium Ride", href: "/coming-soon" },
+  { label: "Become a Fleet Owner", href: "/coming-soon" },
+  { label: "Company", href: "/about" },
 ];
 
 interface NavbarProps {
@@ -68,10 +69,10 @@ const Navbar = ({ isAbsolute = true }: NavbarProps) => {
                 </Link>
               ))}
 
-              <button className="flex items-center gap-1 rounded-xl px-4 py-2 text-[14px] text-[#5a5a5a] hover:bg-[#FFF3CC]">
+              {/* <button className="flex items-center gap-1 rounded-xl px-4 py-2 text-[14px] text-[#5a5a5a] hover:bg-[#FFF3CC]">
                 Company
                 <ChevronDown size={14} />
-              </button>
+              </button> */}
             </nav>
 
             {/* CTA */}
