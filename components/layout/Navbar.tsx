@@ -39,13 +39,14 @@ const Navbar = ({ isAbsolute = true }: NavbarProps) => {
             <div className="flex flex-col justify-between">
               <div>
                 <Image
-                  src="/kablux-logo.svg"
+                  src="/logo.svg"
                   alt="Kablux Logo"
+                  aria-hidden="true"
                   width={150}
                   height={40}
-                  className="h-auto w-[130px] md:w-[150px]"
-                  layout="intrinsic"
-                  priority
+                  // className="h-auto w-[130px] md:w-[150px]"
+                  // layout="intrinsic"
+                  // priority
                 />
               </div>
             </div>
