@@ -9,7 +9,7 @@ import Button from "@/components/common/Button";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Corporate Account", href: "/corporate" },
+  { label: "Corporate Account", href: "/coming-soon" },
   { label: "Book a Premium Ride", href: "/premium" },
   { label: "Become a Fleet Owner", href: "/fleet" },
 ];
