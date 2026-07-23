@@ -10,8 +10,8 @@ import Button from "@/components/common/Button";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Corporate Account", href: "/coming-soon" },
-  { label: "Book a Premium Ride", href: "/premium" },
-  { label: "Become a Fleet Owner", href: "/fleet" },
+  { label: "Book a Premium Ride", href: "/coming-soon" },
+  { label: "Become a Fleet Owner", href: "/coming-soon" },
 ];
 
 interface NavbarProps {
