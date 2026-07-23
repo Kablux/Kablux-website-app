@@ -15,7 +15,7 @@ interface PageHeaderProps {
 const PageHeader = ({
   title,
   crumb,
-  backgroundImage = "/driver-img.png",
+  backgroundImage = "/dri.png",
   svgWidth = "235"
 }: PageHeaderProps) => {
   const [firstWord, ...restWords] = title.split(" ");
@@ -23,7 +23,7 @@ const PageHeader = ({
   return (
     <div className="flex w-full flex-col">
       {/* --- Top Dark Bar --- */}
-      <div className="hidden w-full items-center justify-between bg-[#1A1A1A] px-[7%] py-2.5 text-[13px] text-white/80 sm:px-8 md:flex">
+      <div className="hidden w-full items-center justify-between bg-[#1A1A1A] px-[7%] py-2.5 text-[14px] text-white/80 sm:px-8 md:flex">
         {/* Left Side: Contact Info */}
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
