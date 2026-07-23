@@ -52,12 +52,12 @@ const HeroBanner = () => {
             }}
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
-            <Button href="/corporate" className="font-bold border-black">
+            <Button href="/coming-soon" className="font-bold border-black">
               Corporate Account
             </Button>
 
             <Button
-              href="/premium"
+              href="/coming-soon"
               variant="secondary"
               className="font-bold border-black bg-white"
             >
