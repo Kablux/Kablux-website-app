@@ -46,7 +46,10 @@ const AboutIntro = () => {
           </h2>
 
           <p className="mt-6 max-w-[725px] font-heebo sm:text-[18px] leading-7 text-black/70">
-            Kablux is a premium ride-hailing and courier platform designed around how Nigerians actually move — with fair fares you can negotiate, drivers you can trust, and service that respects your time.
+           Kablux is a modern ride-hailing and courier platform built for the realities of Nigerian cities. We combine technology, accountability, and respect to deliver a consistently better experience for both riders and drivers.
+<br/><br/>
+Founded in Ibadan, we set out to solve the core problems that have long frustrated users of traditional ride-hailing services — unpredictable pricing, unreliable service, safety concerns, and unfair earnings for drivers and riders
+
           </p>
 
           <ul className="my-8 space-y-3">

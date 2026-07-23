@@ -2,61 +2,54 @@
 
 import { motion } from "framer-motion";
 import {
-  HandCoins,
-  ShieldCheck,
-  Users,
-  Crown,
-  Building2,
-  PackageCheck,
+  Eye, // For Transparency
+  ShieldCheck, // For Safety
+  MapPin, // For Reliability
+  DollarSign, // For Fairness
+  Blocks, // For Versatility
   LucideIcon,
 } from "lucide-react";
 
-interface Service {
+interface Approach {
   icon: LucideIcon;
   title: string;
   description: string;
 }
 
-const services: Service[] = [
+const approach: Approach[] = [
   {
-    icon: HandCoins,
-    title: "Price negotiation",
+    icon: Eye,
+    title: "Transparency & Control",
     description:
-      "Agree on a fair fare with your driver before the ride begins, no surge surprises.",
+      "Riders can see upfront pricing and have the option to negotiate on standard rides.",
   },
   {
     icon: ShieldCheck,
-    title: "Rider-first safety",
+    title: "Safety & Verification",
     description:
-      "Live trip tracking, verified drivers, and an in-app SOS button on every ride.",
+      "Every driver undergoes rigorous background checks and documentation verification.",
   },
   {
-    icon: Users,
-    title: "Drivers we respect",
+    icon: MapPin,
+    title: "Reliability",
     description:
-      "Transparent commissions and weekly payouts so drivers earn what they deserve.",
+      "Real-time tracking, clear communication, and professional service standards.",
   },
   {
-    icon: Crown,
-    title: "Premium when you need it",
+    icon: DollarSign,
+    title: "Fairness",
     description:
-      "Upgrade to a Premium account for priority pickups and dedicated support.",
+      "Drivers receive competitive earnings with instant payouts and meaningful support.",
   },
   {
-    icon: Building2,
-    title: "Corporate ready",
+    icon: Blocks,
+    title: "Versatility",
     description:
-      "Manage staff travel budgets and invoicing with a single Kablux for Business account.",
-  },
-  {
-    icon: PackageCheck,
-    title: "Same-day courier",
-    description:
-      "Send packages across town with the same drivers, tracking, and fare fairness.",
+      " From everyday standard rides to corporate mobility and professional courier dispatch, Kablux offers a full suite of mobility solutions.",
   },
 ];
 
-const OurServices = () => {
+const OurApproach = () => {
   return (
     <section className="bg-tertiary">
     
@@ -69,7 +62,7 @@ const OurServices = () => {
         className="mx-auto max-w-[560px] text-center"
       >
         <h2 className="font-poppins text-sm font-bold tracking-[-0.03em] text-black sm:text-lg lg:text-xl">
-          Our <span className="text-deepYellow">Services</span>
+          Our <span className="text-deepYellow">Approach</span>
         </h2>
         <p className="mt-6 max-w-[725px] font-heebo sm:text-[18px] leading-7 text-black/70">
           Kablux connects thousands of riders and drivers every day across the beautiful city of Ibadan. From standard rides to corporate fleets, premium chauffeurs, and same-day courier.
@@ -77,21 +70,21 @@ const OurServices = () => {
       </motion.div>
 
       <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
-        {services.map((service, index) => (
+        {approach.map((approach, index) => (
           <motion.div
-            key={service.title}
+            key={approach.title}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.08 }}
             className="rounded-xl flex flex-col justify-center items-center border border-black/5 bg-white p-8 shadow-[0_10px_30px_-20px_rgba(0,0,0,0.3)] transition-shadow hover:shadow-[0_15px_35px_-18px_rgba(0,0,0,0.35)]"
           >
-            <service.icon className="h-7 w-7 text-[#ffbe18]" strokeWidth={1.75} />
+            <approach.icon className="h-7 w-7 text-[#ffbe18]" strokeWidth={1.75} />
             <h3 className="mt-5 font-poppins text-base md:text-[18px] font-bold text-black">
-              {service.title}
+              {approach.title}
             </h3>
             <p className="mt-2 text-center font-heebo leading-6 text-black/60">
-              {service.description}
+              {approach.description}
             </p>
           </motion.div>
         ))}
@@ -101,4 +94,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default OurApproach;

@@ -1,6 +1,5 @@
 import AboutIntro from "@/components/about/AboutIntro";
-import OurServices from "@/components/about/OurServices";
-import Navbar from "@/components/layout/Navbar";
+import OurServices from "@/components/about/OurApproach";
 import PageHeader from "@/components/PageHeader";
 
 export default function About() {
