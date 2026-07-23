@@ -28,13 +28,13 @@ const Footer = () => {
               <div className="flex flex-col justify-between">
                 <div>
                   <Image
-                    src="/kablux-logo.svg"
+                    src="/logo.svg"
                     alt="Kablux Logo"
-                    layout="intrinsic" // Standard Next.js layout for controlled sizing
+                    aria-hidden="true"
                     width={180} 
                     height={50} 
-                    className="h-auto w-[140px] md:w-[180px]" 
-                    priority
+                    // className="w-[140px] md:w-[180px]" 
+                    // priority
                   />
                 </div>
               </div>
