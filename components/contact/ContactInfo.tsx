@@ -64,7 +64,7 @@ const ContactInfo = () => {
               </span>
 
               <div className="flex flex-col">
-                <h3 className="font-poppins text-2xl font-bold text-gray-900">
+                <h3 className="font-poppins sm:text-[18px] font-semibold text-gray-900">
                   {card.label}
                 </h3>
                 <p className="mt-1 font-poppins text-[15px] text-gray-500">
