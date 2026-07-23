@@ -293,7 +293,7 @@ const TermsContent = () => {
               transition={{ duration: 0.5, delay: Math.min(index * 0.04, 0.3) }}
               className="scroll-mt-24 rounded-xl border border-black/5 bg-white p-6 shadow-[0_10px_30px_-22px_rgba(0,0,0,0.3)] md:p-8"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col sm:flex-row  items-start gap-4">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#141414] font-poppins text-xs font-bold text-[#ffbe18]">
                   {section.number}
                 </span>
