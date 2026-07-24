@@ -2,14 +2,14 @@
 
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin} from "lucide-react";
 import Button from "../common/Button";
 
 const socials = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Twitter, href: "#", label: "X" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Facebook, href: "https://www.facebook.com/share/1B9idXtZ4x/", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/kablux_nigeria?igsh=MnU0YnlwODlmbXk0", label: "Instagram" },
+  // { icon: Tiktok, href: "#", label: "Tiktok" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/kablux-nigeria/", label: "LinkedIn" },
 ];
 
 const ContactMapForm = () => {
