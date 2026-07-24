@@ -17,7 +17,7 @@ const cards: InfoCard[] = [
     icon: MapPin,
     iconBg: "bg-[#1A685B]",
     label: "Address",
-    value: "Lekki Phase 1, Lagos",
+    value: "Surulere, Lagos",
     href: "https://maps.google.com",
     linkName: "View on Map",
   },
