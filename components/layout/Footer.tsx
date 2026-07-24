@@ -140,7 +140,7 @@ const Footer = () => {
                   >
                     hello@kabluxe.com
                   </a>
-                  <p>Lekki, Lagos</p>
+                  <p>Surulere, Lagos</p>
                 </div>
               </div>
             </div>
