@@ -39,7 +39,7 @@ const DownloadApp = () => {
 
                 <div className="mt-6 md:mt-8 grid sm:flex gap-4 w-full">
                   <Button
-                    href="/"
+                    href="https://apps.apple.com/ng/app/kablux-rider/id6759964134"
                     variant="secondary"
                     className="bg-white text-black border-0 w-full rounded-lg p-2 md:p-3"
                   >
@@ -61,7 +61,8 @@ const DownloadApp = () => {
                   </Button>
 
                   <Button
-                    href="/"
+                    href="https://play.google.com/store/apps/details?id=com.crashingout.kablux"
+                    // target
                     variant="secondary"
                     className="bg-white text-black w-full border-0 rounded-lg p-2 md:p-3"
                   >

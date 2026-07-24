@@ -26,7 +26,7 @@ const cards: InfoCard[] = [
     iconBg: "bg-[#ffbe18]",
     label: "Phone",
     value: "Call us directly",
-    href: "tel:+2340000000000",
+    href: "tel:+2349075502400",
      linkName: "Call Us Directly",
   },
   {
@@ -34,7 +34,7 @@ const cards: InfoCard[] = [
     iconBg: "bg-[#141414]",
     label: "Email",
     value: "Send Us A Mail",
-    href: "mailto:hello@kablux.com",
+    href: "mailto:hello@kabluxe.com",
      linkName: "Send your Mail",
   },
 ];

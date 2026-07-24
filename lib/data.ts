@@ -298,7 +298,12 @@ export const services = [
       "Your quick ride app for everyday journeys, get matched with your driver in no time.",
     buttonText: "Book a Ride",
     image: "/standard.gif",
-    href: "/rides",
+    // New properties for dynamic routing
+    isAppDownload: true,
+    iosLink: "https://apps.apple.com/ng/app/kablux-rider/id6759964134",
+    androidLink: "https://play.google.com/store/apps/details?id=com.crashingout.kablux",
+    href: "https://play.google.com/store/apps/details?id=com.crashingout.kablux",
+    // href: "/rides",
   },
   {
     title: "Fleet Riders",
@@ -306,7 +311,10 @@ export const services = [
       "Doorstep delivery made electric and easy to deliver your items across different locations.",
     buttonText: "Become a Fleet Owner",
     image: "/fleet.gif",
-    href: "/fleet",
+     isAppDownload: true,
+    iosLink: "https://apps.apple.com/ng/app/kablux-rider/id6759964134",
+    androidLink: "https://play.google.com/store/apps/details?id=com.crashingout.kablux",
+    href: "https://play.google.com/store/apps/details?id=com.crashingout.kablux",
   },
   {
     title: "Corporate Rides",
@@ -314,7 +322,10 @@ export const services = [
       "Efficient, electric haulage for your business and personal needs.",
     buttonText: "Register a Corporate Account",
     image: "/corporate.png",
-    href: "/corporate",
+     isAppDownload: true,
+    iosLink: "https://apps.apple.com/ng/app/kablux-rider/id6759964134",
+    androidLink: "https://play.google.com/store/apps/details?id=com.crashingout.kablux",
+    href: "https://play.google.com/store/apps/details?id=com.crashingout.kablux",
   },
 ];
 

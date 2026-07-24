@@ -64,8 +64,8 @@ Founded in Ibadan, we set out to solve the core problems that have long frustrat
             ))}
           </ul>
 
-          <Button href="/download" className="w-max rounded-[60px] bg-deepYellow text-[#fff] py-3">
-            Join Us
+          <Button href="/contact" className="w-max rounded-[60px] bg-deepYellow text-[#fff] py-3">
+            Reach Us
           </Button>
         </motion.div>
 
