@@ -325,33 +325,6 @@ const TermsContent = () => {
         </div>
       </div>
 
-      <style jsx global>{`
-        .prose-terms ul {
-          list-style: none;
-          padding: 0;
-          margin: 0.5rem 0 0;
-          display: flex;
-          flex-direction: column;
-          gap: 0.6rem;
-        }
-        .prose-terms li {
-          position: relative;
-          padding-left: 1.1rem;
-        }
-        .prose-terms li::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0.55em;
-          width: 5px;
-          height: 5px;
-          border-radius: 9999px;
-          background: #ffbe18;
-        }
-        .prose-terms p + ul {
-          margin-top: 0.75rem;
-        }
-      `}</style>
     </section>
   );
 };

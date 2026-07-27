@@ -2,7 +2,8 @@
 
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram,  Linkedin } from "lucide-react";
+import { RiTwitterXLine } from "react-icons/ri";
 import Button from "../common/Button";
 
 const socials = [
@@ -15,6 +16,11 @@ const socials = [
     icon: Instagram,
     href: "https://www.instagram.com/kablux_nigeria?igsh=MnU0YnlwODlmbXk0",
     label: "Instagram",
+  },
+    {
+    icon: RiTwitterXLine,
+    href: "https://x.com/KabluxNigeria",
+    label: "X",
   },
   // { icon: Tiktok, href: "#", label: "Tiktok" },
   {

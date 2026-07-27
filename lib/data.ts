@@ -56,7 +56,7 @@ export const categories: FAQCategory[] = [
       {
         question: "Where does Kablux operate?",
         answer:
-          "Kablux is launching in major Nigerian cities, beginning with Lagos, with plans to expand across the country as our driver network grows.",
+          "Kablux launched in Ibadan and is currently expanding to other major Nigerian cities including Lagos, Abuja,  and Port Harcourt. We are growing our driver network to serve more locations across the country.",
       },
       {
         question: "How is Kablux different from other ride-hailing apps?",

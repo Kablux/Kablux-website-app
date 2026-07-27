@@ -375,33 +375,6 @@ const PrivacyContent = () => {
         </div>
       </div>
 
-      <style jsx global>{`
-        .prose-privacy ul {
-          list-style: none;
-          padding: 0;
-          margin: 0.5rem 0 0;
-          display: flex;
-          flex-direction: column;
-          gap: 0.6rem;
-        }
-        .prose-privacy li {
-          position: relative;
-          padding-left: 1.1rem;
-        }
-        .prose-privacy li::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0.55em;
-          width: 5px;
-          height: 5px;
-          border-radius: 9999px;
-          background: #ffbe18;
-        }
-        .prose-privacy p + ul {
-          margin-top: 0.75rem;
-        }
-      `}</style>
     </section>
   );
 };
